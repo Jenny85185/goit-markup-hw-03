@@ -23,12 +23,19 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-header {
+.header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .list {
   list-style: none;
@@ -64,8 +71,6 @@ header {
   letter-spacing: 0.03em;
   color: var(--hover-color);
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .dark-logo {
   color: #000;
@@ -80,8 +85,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -96,8 +99,6 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .contact-item:not(:last-child) {
   margin-right: 50px;
@@ -114,16 +115,15 @@ header {
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding-top:0;
-  padding-bottom: 0;
+  padding-top:200px;
+  padding-bottom: 200px;
 }
 .hero-container {
   display: block;
 }
 .hero-title {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,7 +134,6 @@ header {
 }
 .hero-btn {
   padding: 10px 32px;
-  margin-bottom: 200px;
   display: inline-block;
   font-weight: 700;
   font-size: 16px;
@@ -160,6 +159,9 @@ header {
 
 .features-menu {
   display: flex;
+}
+.features-item {
+  width: 270px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -193,7 +195,6 @@ header {
 }
 
 .mission-item:not(:last-child) {
-  display: flex;
   margin-right: 30px;
 }
 .personal {
@@ -205,9 +206,7 @@ header {
   padding: 0;
 }
 .team {
-  display: block;
   width: 270px;
-  height: 360px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -216,8 +215,11 @@ header {
 .team:not(:last-child) {
   margin-right: 30px;
 }
+.person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-person {
-  margin-top: 30px;
   color: var(--nav-color);
   text-align: center;
   font-weight: 500;
@@ -227,7 +229,6 @@ header {
 }
 .person-work {
   margin-top: 10px;
-  margin-bottom: 30px;
   color: var(--text-color);
   text-align: center;
 }
@@ -235,6 +236,16 @@ header {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.logo-footer {
+  display: block;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+  margin-bottom: 20px;
 }
 .footer-list {
   font-size: 14px;
@@ -249,9 +260,6 @@ header {
   color: var(--light-color);
 }
 /* styles for portfolio */
-.menu-section{
-padding-bottom: 0;
-}
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -265,7 +273,7 @@ padding-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom:50px;
+  margin-bottom:50px;
 }
 .button {
   padding: 6px 22px;
@@ -290,8 +298,6 @@ padding-bottom: 0;
   color: var(--light-color);
   background-color: var(--hover-color);
 }
-.our-projects
-{padding-top: 0;}
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -303,9 +309,12 @@ padding-bottom: 0;
   margin-top: 30px;
   margin-left: 30px;
   width: 370px;
-  height: 404px;
   background: #ffffff;
+}
+.project-text {
+  padding:20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .project-name {
   font-weight: 700;
