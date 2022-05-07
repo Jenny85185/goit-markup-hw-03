@@ -11,14 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
+      <div class="container head-container">
         <a class="logo link" href="./index.html"
-          >Web<span class="dark-logo">Studio</span></a
-        >
+          >Web<span class="dark-logo">Studio</span></a >
+        <nav class="header-nav">
         <ul class="menu list">
           <li class="menu-item">
             <a class="menu-link link" href="./index.html">Студия</a>
@@ -43,53 +46,56 @@
           >
         </li>
       </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <div>
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
-        </div>
+     
+      <section class=" section hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
+          <button class="hero-btn"type ="button">Заказать услугу</button>
+          </div>
       </section>
-      <section class="features">
-        <div>
-          <ul class="list">
-            <li>
+    
+      <section class=" section  features">
+                <div class="container features-container">
+          <ul class=" features-menu list">
+            <li  class="features-item" >
               <h2 class="our-features">Внимание к деталям</h2>
-              <p>
+              <p class="idea-features">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h2 class="our-features">Пунктуальность</h2>
-              <p>
+              <p class="idea-features">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h2 class="our-features">Планирование</h2>
-              <p>
+              <p class="idea-features">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h2 class="our-features">Современные технологии</h2>
-              <p>
+              <p class="idea-features">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
             </li>
           </ul>
-        </div>
+          </div>
       </section>
-      <section class="our-mission">
-        <div>
+      <section class=" section  our-mission">
+        <div class="container our-mission-container">
           <h2 class="mission">Чем мы занимаемся</h2>
           <ul class="mission-list list">
-            <li>
+            <li  class="mission-item">
               <img
                 src="./images/comp.jpg"
                 alt="поддержка работы сайта на компьютере"
@@ -97,7 +103,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="mission-item">
               <img
                 src="./images/phone.jpg"
                 alt="поддержка работы сайта на телефоне"
@@ -105,7 +111,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="mission-item">
               <img
                 src="./images/tab.jpg"
                 alt="поддержка работы сайта на планшете"
@@ -116,11 +122,11 @@
           </ul>
         </div>
       </section>
-      <section class="personal">
-        <div>
+      <section class=" section personal">
+        <div class="container personal-container">
           <h2 class="our-team">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="team">
               <img
                 src="./images/employees/igor.jpg"
                 alt="Игорь Демьяненко"
@@ -130,7 +136,7 @@
               <h3 class="team-person">Игорь Демьяненко</h3>
               <p class="person-work" lang="en">Product Designer</p>
             </li>
-            <li>
+            <li class="team">
               <img
                 src="./images/employees/olga.jpg"
                 alt="Ольга Репина"
@@ -140,7 +146,7 @@
               <h3 class="team-person">Ольга Репина</h3>
               <p class="person-work" lang="en">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team">
               <img
                 src="./images/employees/nikolai.jpg"
                 alt="Николай Тарасов"
@@ -165,31 +171,22 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo link" href="./index.html"
-        >Web<span class="light-logo">Studio</span></a
-      >
-      <ul class="footer-list list">
-        <li>
-          <a
-            class="contact-link adress link"
-            href="https://bit.ly/3pXMvUd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            г. Киев, пр-т Леси Украинки, 26
-          </a>
-        </li>
-        <li>
-          <a class="contact-link link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-link link" href="tel:0991111111"
-            >+38 099 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <a class="logo  link" href="./index.html">Web<span class="light-logo">Studio</span></a>
+        <ul class="footer-list list">
+          <li class="item">
+            <a class="contact-link adress link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">
+              г. Киев, пр-т Леси Украинки, 26
+            </a>
+          </li>
+          <li class="item">
+            <a class="contact-link link" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="item">
+            <a class="contact-link link" href="tel:0991111111">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
